@@ -5,15 +5,20 @@ Answer the following questions. First, without external resources. Challenge you
 
 1. In what ways are JavaScript and Ruby similar? In what ways are they different?
 
-  Your answer:
+  Your answer :
+    They are both object-oriented and share similar programming logic.
+    JavaScript has prototypal inheritance while Ruby doesn't.
+    Compare to JavaScript, Ruby's syntax reads more like natural language.
 
   Researched answer:
+
 
 
 
 2. What is a hash?
 
   Your answer:
+    Hash is a iterable data type composed of key and value pairs.
 
   Researched answer:
 
@@ -22,6 +27,7 @@ Answer the following questions. First, without external resources. Challenge you
 3. What is the testing framework used in Ruby? Describe the process of setting up the testing environment.
 
   Your answer:
+    Rspec
 
   Researched answer:
 
