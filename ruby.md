@@ -41,6 +41,7 @@ Answer the following questions. First, without external resources. Challenge you
     Hash is a enumerable data type composed of key and value pairs.
 
   Researched answer:
+
     In JavaScript, hashs are "hashtable" objects, which is a data structure used to implement an associative array, a structure that can map keys to values (i.e., a permutation of an associative array).
 
     In Ruby, hashes are like dictionaries where you can look up one thing by another thing. A hash assigns values to keys, so that values can be looked up by their keys. You can use any kind of object as keys and use any kind of object as values.
@@ -73,6 +74,7 @@ Answer the following questions. First, without external resources. Challenge you
     Rspec.
 
   Researched answer:
+
     To set up a testing environment:
       1. Delete any existing test folders
       2. Add gems: add the following gems to the :development, :test group in my Gemfile and run bundle.
@@ -95,6 +97,7 @@ Answer the following questions. First, without external resources. Challenge you
    One-to-one, one-to-many, and many-to-one.
 
   Researched answer:
+
   All these relationship is based on "is a" relationship, "has-a" relationship and "part-of" relationship.
 
   Inheritance is an "is a " relationship. Inheritance is a parent-child relationship where we create a new class by using exsiting class.
@@ -116,6 +119,7 @@ Answer the following questions. First, without external resources. Challenge you
     An instance variable is a variable with scope of a class and signified by the prefix @. It is different from other variables in that only has the scope of the class, meaning it can't be accessed outside of the class.
 
   Researched answer:
+
   Instance variables are scoped with a specific instance. This means that if you have an instance variable "title", each post will have it's own title. It has a name beginning with @ and its scope is confined to whatever object "self" refers to. From outside the object, instance variables cannot be altered or even observed, except by methods that are explicitly provided by the programmer.
 
   A class variable, instead, is shared across all instances of that class.
@@ -134,26 +138,26 @@ Answer the following questions. First, without external resources. Challenge you
 
 Choose one of these resources and look through the material for 10-15 min. List three new things you learned about Ruby:
 
-1) Comment
-#
-=begin
-  comment
-=end
+  1) Comment
+  #
+  =begin
+    comment
+  =end
 
-2) Convention
-  1. local variables should start with a lowercase letter and words should be separated by underscores, like counter and masterful_method
-  2. In Ruby, we use @ before a variable to signify that it’s an instance variable.
-  3. Constants are written in all uppercase with underscores to separate words, LIKE_THIS.
-  4. Ruby class and module names are also constants, but they are conventionally written using initial capital letters and camel case, LikeThis.
-  5. The name of a method may end with =, !, or ?
-  6. A symbol is a constant name that doesn’t require pre-declaration. Additionally, a symbol is unique 100% of the time. Symbol literals begin with “:”
-  7. variables
-    1) local variables starts with an underscore or lowercase letter
-    2) global variable starts with $
-    3) class variable starts with @@
-  8. There are also reversed words
+  2) Convention
+    1. local variables should start with a lowercase letter and words should be separated by underscores, like counter and masterful_method
+    2. In Ruby, we use @ before a variable to signify that it’s an instance variable.
+    3. Constants are written in all uppercase with underscores to separate words, LIKE_THIS.
+    4. Ruby class and module names are also constants, but they are conventionally written using initial capital letters and camel case, LikeThis.
+    5. The name of a method may end with =, !, or ?
+    6. A symbol is a constant name that doesn’t require pre-declaration. Additionally, a symbol is unique 100% of the time. Symbol literals begin with “:”
+    7. variables
+      1) local variables starts with an underscore or lowercase letter
+      2) global variable starts with $
+      3) class variable starts with @@
+    8. There are also reversed words
 
-3) Bang method: Bang methods end with an exclamation mark, and often modify the object they are called on.
+  3) Bang method: Bang methods end with an exclamation mark, and often modify the object they are called on.
 
 
 7. Stretch: What are blocks, procs, and lambdas?
@@ -161,6 +165,7 @@ Choose one of these resources and look through the material for 10-15 min. List 
   Your answer:
 
   Researched answer:
+
   "A closure is a first-class function with an environment. The environment is a mapping to the variables that existed when the closure was created. The closure will retain its access to these variables, even if they're defined in another scope.
 
   Ruby doesn't have first-class functions, but it does have closures in the form of blocks, procs and lambdas. Blocks are used for passing blocks of code to methods, and procs and lambda's allow storing blocks of code in variables."
@@ -185,7 +190,7 @@ Choose one of these resources and look through the material for 10-15 min. List 
   Summary:
     1) Blocks are used extensively in Ruby for passing bits of code to functions. By using yield keyword, a block can be implicitly passed without having to convert it to a proc.
     2) When using parameters prefixed with ampersands (&), passing a block to a method results in a proc in the method's context. Procs behave like blocks, but they can be stored in a variable.
-    3) Lambdas are procs that behave like methods, meaning return as methods instead of in their parent scope 
+    3) Lambdas are procs that behave like methods, meaning return as methods instead of in their parent scope
 
   References:
   https://blog.appsignal.com/2018/09/04/ruby-magic-closures-in-ruby-blocks-procs-and-lambdas.html
