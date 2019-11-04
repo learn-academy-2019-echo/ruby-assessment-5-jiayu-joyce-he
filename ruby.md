@@ -161,3 +161,31 @@ Choose one of these resources and look through the material for 10-15 min. List 
   Your answer:
 
   Researched answer:
+  "A closure is a first-class function with an environment. The environment is a mapping to the variables that existed when the closure was created. The closure will retain its access to these variables, even if they're defined in another scope.
+
+  Ruby doesn't have first-class functions, but it does have closures in the form of blocks, procs and lambdas. Blocks are used for passing blocks of code to methods, and procs and lambda's allow storing blocks of code in variables."
+
+  1. "Blocks are snippets of code that can be created to be executed later. Blocks are passed to methods that yield them within the "do" and "end" keywords."
+
+  e.g. [1,2,3].each { |n| puts "#{n}!" }
+  # a block is passed to the Array#each method, which runs the block for each item in the array and prints it to the console.
+
+  ## Extra information to read on about the keyword "yield"
+
+  2. A "prop" is an instance of the Proc class, which holds a code block to be executed, and can be stored in a variable. To create a proc, you call Proc.new and pass it a block.
+
+  e.g. proc = Proc.new { |n| puts "#{n}!" }
+
+  Tip: While it’s useful to have the proc in the method in some situations, the conversion of a block to a proc produces a performance hit. Whenever possible, use implicit blocks instead.
+
+  3. Lambdas are special procs--they are more like regular methods in two ways: they enforce the number of arguments passed when they're called and they use normal returns. A lambda treats the return keyword the same way a method does.
+
+  When use a lambda, it will be printed. Calling return in the lambda will behave like calling return in a method.
+
+  Summary:
+    1) Blocks are used extensively in Ruby for passing bits of code to functions. By using yield keyword, a block can be implicitly passed without having to convert it to a proc.
+    2) When using parameters prefixed with ampersands (&), passing a block to a method results in a proc in the method's context. Procs behave like blocks, but they can be stored in a variable.
+    3) Lambdas are procs that behave like methods, meaning return as methods instead of in their parent scope 
+
+  References:
+  https://blog.appsignal.com/2018/09/04/ruby-magic-closures-in-ruby-blocks-procs-and-lambdas.html
