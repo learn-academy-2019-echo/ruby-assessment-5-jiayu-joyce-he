@@ -173,9 +173,9 @@ Choose one of these resources and look through the material for 10-15 min. List 
   1. "Blocks are snippets of code that can be created to be executed later. Blocks are passed to methods that yield them within the "do" and "end" keywords."
 
   e.g. [1,2,3].each { |n| puts "#{n}!" }
-  # a block is passed to the Array#each method, which runs the block for each item in the array and prints it to the console.
+    a block is passed to the Array#each method, which runs the block for each item in the array and prints it to the console.
 
-  ## Extra information to read on about the keyword "yield"
+  Note: Extra information to read on about the keyword "yield"
 
   2. A "prop" is an instance of the Proc class, which holds a code block to be executed, and can be stored in a variable. To create a proc, you call Proc.new and pass it a block.
 
@@ -188,6 +188,7 @@ Choose one of these resources and look through the material for 10-15 min. List 
   When use a lambda, it will be printed. Calling return in the lambda will behave like calling return in a method.
 
   Summary:
+  
     1) Blocks are used extensively in Ruby for passing bits of code to functions. By using yield keyword, a block can be implicitly passed without having to convert it to a proc.
     2) When using parameters prefixed with ampersands (&), passing a block to a method results in a proc in the method's context. Procs behave like blocks, but they can be stored in a variable.
     3) Lambdas are procs that behave like methods, meaning return as methods instead of in their parent scope
