@@ -12,6 +12,8 @@ new_arr2 = []
 myArray.each{|x| new_arr2.push(x*3)}
 p new_arr2
 
+# researched: http://billleidy.com/blog/cheat-sheet.html#each
+
 # 2. Create a method that takes in a sentence and returns a new sentence with the first letter of each word capitalized. Expected output = "Hello There, How Are You?"
 
 sentence = "hello there, how are you?"
